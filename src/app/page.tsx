@@ -57,7 +57,6 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#548AB7] dark:text-white">About Me</h2>
           
                     <div className="relative">
-            {/* Main Profile Text */}
             <div className="pr-0 md:pr-80">
               <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
                 I'm an informatics student at TU Wien with a strong interest in Cybersecurity and AI, driven by curiosity and a hands-on mindset. 
@@ -72,7 +71,6 @@ export default function Home() {
               </p>
             </div>
             
-            {/* Quick Facts Box - Positioned in top right */}
             <div className="static md:absolute md:top-0 md:right-0 mt-8 md:mt-0 w-full md:w-72">
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-[#548AB7]/20 dark:border-gray-600">
                 <h3 className="text-xl font-semibold mb-4 text-[#548AB7] dark:text-white">Quick Facts</h3>
