@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       
       {/* Intro Section */}
-      <section id="intro" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+      <section id="intro" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pb-8">
         <div className="max-w-5xl mx-auto text-center">
           <div className="mb-6">
             <div className="w-72 h-90 mx-auto mb-8">
