@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectCard from "../../components/project-card";
+import ContactForm from "../../components/contact-form";
 
 export default function Home() {
   return (
@@ -267,6 +268,8 @@ export default function Home() {
             Currently pursuing a junior position in software development or a similar role which pushes my education 
             within the fields of Cybersecurity, AI or DevOps.
           </p>
+          
+          <ContactForm />
           
           {/* Social Links */}
           <div className="mt-12 pt-8 border-t border-[#D6D3CD] dark:border-gray-700">
