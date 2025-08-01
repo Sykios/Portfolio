@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Navbar from "../../components/navbar";
 import ProjectCard from "../../components/project-card";
 import ContactForm from "../../components/contact-form";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#EAE8E8] dark:bg-gray-900 text-gray-900 dark:text-white relative overflow-hidden">
+      
+      <Navbar />
+      
       {/* Intro Section */}
       <section id="intro" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
         <div className="max-w-5xl mx-auto text-center">
