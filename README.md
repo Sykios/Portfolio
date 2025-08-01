@@ -1,36 +1,238 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website - Laurenz Bilek
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15.3.5-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://choosealicense.com/licenses/mit/)
 
-First, run the development server:
+> A modern, responsive portfolio website showcasing my software engineering skills, projects, and professional experience. Built with modern web technologies and designed with user experience in mind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Live Demo
+
+**[View Live Portfolio →](https://laurenz-bilek.vercel.app)**
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Key Components](#key-components)
+- [Development Workflow](#development-workflow)
+- [Performance & SEO](#performance--seo)
+- [Contact](#contact)
+
+## 🎯 Overview
+
+This portfolio website serves as a comprehensive showcase of me as a person and my technical abilities as a software engineering student at TU Wien. It demonstrates proficiency in modern web development technologies while maintaining clean, maintainable code architecture.
+
+### 🎨 Design Philosophy
+- **Clean & Modern**: Minimalist design with intuitive navigation
+- **Responsive First**: Mobile-optimized with progressive enhancement
+- **Accessibility**: WCAG compliant with semantic HTML and proper contrast ratios
+- **Performance**: Optimized for speed with lazy loading and efficient rendering
+
+## ✨ Features
+
+### 🔧 Technical Features
+- **📱 Fully Responsive Design** - Optimized for all device sizes
+- **🌙 Dark/Light Mode** - Automatic theme switching based on user preference
+- **⚡ Performance Optimized** - Next.js 15 with Turbopack for lightning-fast builds
+- **📧 Contact Form Integration** - Server-side email handling with Resend API
+- **🎨 Interactive UI Elements** - Smooth animations and transitions
+- **📊 Dynamic Skills Visualization** - Animated progress bars and skill categorization
+- **🔍 SEO Optimized** - Meta tags, structured data, and semantic HTML
+
+### 💼 Professional Features
+- **Project Showcase** - Detailed project cards with live demos and source code links
+- **Skills Assessment** - Comprehensive technical skills breakdown with proficiency levels
+- **Social Integration** - Direct links to LinkedIn and GitHub profiles
+
+## 🛠 Tech Stack
+
+### Frontend
+- **[Next.js 15](https://nextjs.org/)** - React framework with App Router
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript development
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[React 19](https://react.dev/)** - Latest React with concurrent features
+
+### Backend & Services
+- **[Resend](https://resend.com/)** - Email API for contact form functionality
+- **[Vercel](https://vercel.com/)** - Deployment and hosting platform
+
+### Development Tools
+- **[ESLint](https://eslint.org/)** - Code linting and quality assurance
+- **[Turbopack](https://turbo.build/pack)** - Fast bundler for development
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Sykios/Portfolio.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Fill in your environment variables:
+   ```env
+   RESEND_API_KEY=your_resend_api_key
+   CONTACT_EMAIL=your_email@example.com
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── src/
+│   └── app/
+│       ├── api/
+│       │   └── contact/
+│       │       └── route.ts          # Contact form API endpoint
+│       ├── globals.css               # Global styles
+│       ├── layout.tsx                # Root layout component
+│       └── page.tsx                  # Home page
+├── components/
+│   ├── contact-form.tsx              # Contact form with validation
+│   ├── footer.tsx                    # Site footer
+│   ├── navbar.tsx                    # Navigation with scroll progress
+│   ├── project-card.tsx              # Project showcase cards
+│   └── skills-section.tsx            # Reusable skills component
+├── public/
+│   └── laurenz-bilek-cover-pic.png   # Profile image
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Key Components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Navigation System
+- **Smooth scrolling** navigation between sections
+- **Progress indicator** showing scroll position
+- **Mobile-responsive** hamburger menu
+- **Active section** highlighting
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Contact Form
+- **Client-side validation** with TypeScript
+- **Server-side email processing** using Resend API
+- **Error handling** and user feedback
+- **Responsive design** with accessibility features
 
-## Learn More
+### Skills Visualization
+- **Modular component architecture** for reusability
+- **Dynamic progress bars** with smooth animations
+- **Categorized skill display** (Frontend, Backend, Tools & DevOps)
+- **TypeScript interfaces** for type safety
 
-To learn more about Next.js, take a look at the following resources:
+### Project Showcase
+- **Interactive project cards** with hover effects
+- **Status indicators** (Completed, In Progress, Planned)
+- **Technology stack** highlighting
+- **Direct links** to live demos and source code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔄 Development Workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Branch Strategy
+```bash
+main              # Production branch
+├── development   # Staging branch
+└── feature/*     # Feature branches
+```
 
-## Deploy on Vercel
+### Code Quality
+- **TypeScript** for type safety
+- **ESLint** for code consistency
+- **Component-based architecture** for maintainability
+- **Responsive design principles** throughout
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deployment
+- **Automatic deployment** via Vercel
+- **Preview deployments** for all branches
+- **Production builds** optimized for performance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚡ Performance & SEO
+
+### Performance Optimizations
+- **Image optimization** with Next.js Image component
+- **Code splitting** and lazy loading
+- **Minimal bundle size** with tree shaking
+- **Fast refresh** during development with Turbopack
+
+### SEO Features
+- **Semantic HTML** structure
+- **Meta tags** optimization
+- **Open Graph** and Twitter Card support
+- **Sitemap** generation
+- **Structured data** markup
+
+## 📈 Project Highlights
+
+### Technical Achievements
+- **Modern Architecture**: Leveraging Next.js 15's latest features including App Router
+- **Type Safety**: Comprehensive TypeScript implementation with custom interfaces
+- **Component Reusability**: Modular design with reusable components like SkillsSection
+- **Performance First**: Optimized for Core Web Vitals and user experience
+- **Professional Grade**: Production-ready code with proper error handling
+
+### Development Best Practices
+- **Clean Code**: Well-structured, readable, and maintainable codebase
+- **Git Workflow**: Professional branching strategy with meaningful commits
+- **Documentation**: Comprehensive README and inline code documentation
+- **Testing Ready**: Component structure suitable for unit and integration testing
+
+## 🤝 Contributing
+
+While this is a personal portfolio, I welcome feedback and suggestions:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+**Laurenz Bilek** - Software Engineering Student @ TU Wien
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/laurenz-bilek-48445b210/)
+- 🐙 [GitHub](https://github.com/Sykios)
+- 📧 [Contact Form](https://laurenz-bilek.vercel.app#contact)
+
+---
+
+*Built with ❤️ using Next.js, TypeScript, and Tailwind CSS*
