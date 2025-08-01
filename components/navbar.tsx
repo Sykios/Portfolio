@@ -75,9 +75,8 @@ export default function Navbar() {
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center h-16">
-          {/* Logo - Fixed width */}
-          <div className="flex-shrink-0 w-40">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex-shrink-0">
             <a 
               href="#intro" 
               onClick={(e) => { e.preventDefault(); scrollToSection('#intro'); }}
@@ -113,8 +112,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* CTA Button - Desktop only, Fixed width */}
-          <div className="hidden lg:flex justify-end w-40">
+          {/* CTA Button - Desktop only */}
+          <div className="hidden lg:flex">
             <a
               href="#contact"
               onClick={(e) => { e.preventDefault(); scrollToSection('#contact'); }}
@@ -152,34 +151,36 @@ export default function Navbar() {
       <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
         isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       }`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#EAE8E8]/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-[#D6D3CD] dark:border-gray-700">
-          {navItems.map((item) => {
-            const isActive = activeSection === item.href.substring(1);
-            return (
+        <div className="px-4 pt-2 pb-3 space-y-1 bg-[#EAE8E8]/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-[#D6D3CD] dark:border-gray-700">
+          <div className="flex flex-col items-end space-y-1">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.href.substring(1);
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(e) => { e.preventDefault(); scrollToSection(item.href); }}
+                  className={`block px-4 py-3 rounded-lg text-lg font-semibold cursor-pointer transition-all duration-300 w-full text-right ${
+                    isActive 
+                      ? 'text-[#548AB7] dark:text-[#6FA2CD] bg-[#548AB7]/15 dark:bg-[#548AB7]/25 border-r-4 border-[#548AB7]' 
+                      : 'text-[#548AB7] dark:text-gray-300 hover:text-[#6FA2CD] dark:hover:text-[#6FA2CD] hover:bg-[#548AB7]/10 dark:hover:bg-[#548AB7]/20'
+                  }`}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
+            
+            {/* Mobile CTA */}
+            <div className="pt-4 pb-2 w-full">
               <a
-                key={item.name}
-                href={item.href}
-                onClick={(e) => { e.preventDefault(); scrollToSection(item.href); }}
-                className={`block px-4 py-3 rounded-lg text-lg font-semibold cursor-pointer transition-all duration-300 ${
-                  isActive 
-                    ? 'text-[#548AB7] dark:text-[#6FA2CD] bg-[#548AB7]/15 dark:bg-[#548AB7]/25 border-l-4 border-[#548AB7]' 
-                    : 'text-[#548AB7] dark:text-gray-300 hover:text-[#6FA2CD] dark:hover:text-[#6FA2CD] hover:bg-[#548AB7]/10 dark:hover:bg-[#548AB7]/20'
-                }`}
+                href="#contact"
+                onClick={(e) => { e.preventDefault(); scrollToSection('#contact'); }}
+                className="block w-full bg-[#548AB7] hover:bg-[#6FA2CD] text-white text-center px-4 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer"
               >
-                {item.name}
+                Hire Me
               </a>
-            );
-          })}
-          
-          {/* Mobile CTA */}
-          <div className="pt-4 pb-2">
-            <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); scrollToSection('#contact'); }}
-              className="block w-full bg-[#548AB7] hover:bg-[#6FA2CD] text-white text-center px-4 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer"
-            >
-              Hire Me
-            </a>
+            </div>
           </div>
         </div>
       </div>
