@@ -75,8 +75,9 @@ export default function Navbar() {
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
+        <div className="flex items-center h-16">
+          {/* Logo - Fixed width */}
+          <div className="flex-shrink-0 w-40">
             <a 
               href="#intro" 
               onClick={(e) => { e.preventDefault(); scrollToSection('#intro'); }}
@@ -86,9 +87,9 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-1">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="flex items-baseline space-x-1">
               {navItems.map((item) => {
                 const isActive = activeSection === item.href.substring(1);
                 return (
@@ -112,8 +113,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* CTA Button - Desktop only */}
-          <div className="hidden lg:block">
+          {/* CTA Button - Desktop only, Fixed width */}
+          <div className="hidden lg:flex justify-end w-40">
             <a
               href="#contact"
               onClick={(e) => { e.preventDefault(); scrollToSection('#contact'); }}
