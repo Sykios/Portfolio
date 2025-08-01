@@ -31,7 +31,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl sm:text-2xl text-[#548AB7] dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            One-liner introduction
+            Informatics student blending software engineering skills with strong communication and teamwork
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -56,21 +56,45 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#548AB7] dark:text-white">About Me</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6">
-                Short Profile about me
+                    <div className="relative">
+            {/* Main Profile Text */}
+            <div className="pr-0 md:pr-80">
+              <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
+                I'm an informatics student at TU Wien with a strong interest in Cybersecurity and AI, driven by curiosity and a hands-on mindset. 
+                Outside the digital world, I'm passionate about nature, intense sports like kickboxing and heavy lifting, and taking on work that challenges both body and mind.
+              </p>
+              <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
+                I thrive in collaborative environments and have developed solid communication and problemsolving skills through honorary work at a large student dorm, where I served as a Heimvertretungsmitglied and IT advisor. 
+                There, I managed everything from EKey fingerprint systems to network infrastructure, printers, and multimedia systems, which combined technical support with strong interpersonal responsibility.
+              </p>
+              <p className="text-lg text-[#548AB7] dark:text-gray-300 leading-relaxed">
+                Whether it's working on complex software or navigating tough physical challenges, I bring persistence, high frustration tolerance, and a team-first attitude to everything I do.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-[#548AB7] dark:text-white">Quick Facts</h3>
-              <ul className="space-y-2 text-[#548AB7] dark:text-gray-300">
-                <li>🎓 Computer Science Student @ TUWien</li>
-                <li>🌍 Based in Vienna</li>
-                <li>🚀 Always Learning New Technologies</li>
-                <li>💡 Currently pursuing Projects in Cybersecurity, Cloudtech & AI</li>
-              </ul>
+            {/* Quick Facts Box - Positioned in top right */}
+            <div className="static md:absolute md:top-0 md:right-0 mt-8 md:mt-0 w-full md:w-72">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-[#548AB7]/20 dark:border-gray-600">
+                <h3 className="text-xl font-semibold mb-4 text-[#548AB7] dark:text-white">Quick Facts</h3>
+                <ul className="space-y-3 text-[#548AB7] dark:text-gray-300">
+                  <li className="flex items-center">
+                    <span className="text-lg mr-3">🎓</span>
+                    <span>Software Engineering Student @ TUWien</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-lg mr-3">🌍</span>
+                    <span>Based in Vienna</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-lg mr-3">🚀</span>
+                    <span>Always Learning New Technologies</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-lg mr-3">💡</span>
+                    <span>Currently pursuing Projects in Cybersecurity, Cloudtech & AI</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
