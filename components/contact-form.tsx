@@ -18,7 +18,6 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -32,7 +31,6 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-    setErrorMessage('');
 
     try {
       const response = await fetch('/api/contact', {
@@ -43,18 +41,12 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
-
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         setSubmitStatus('error');
-        setErrorMessage(result.error || 'Something went wrong');
       }
-    } catch (error) {
-      setSubmitStatus('error');
-      setErrorMessage('Network error. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -131,7 +123,7 @@ export default function ContactForm() {
         {submitStatus === 'success' && (
           <div className="p-4 bg-green-100 dark:bg-green-900 border border-green-300 dark:border-green-700 rounded-lg">
             <p className="text-green-800 dark:text-green-200">
-              ✅ Message sent successfully! I'll get back to you soon.
+              ✅ Message sent successfully! I&apos;ll get back to you soon.
             </p>
           </div>
         )}
@@ -139,7 +131,7 @@ export default function ContactForm() {
         {submitStatus === 'error' && (
           <div className="p-4 bg-red-100 dark:bg-red-900 border border-red-300 dark:border-red-700 rounded-lg">
             <p className="text-red-800 dark:text-red-200">
-              ❌ Sorry! I probably messed up something. Please try to reach me via LinkedIn!
+              ❌ Sorry! Something went wrong. Please try to reach me via LinkedIn!
             </p>
           </div>
         )}
