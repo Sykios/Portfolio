@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProjectCard from "../../components/project-card";
 
 export default function Home() {
   return (
@@ -194,6 +195,69 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#D6D3CD] dark:bg-gray-800">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#548AB7] dark:text-white">Selection of my Projects</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Example Project with Demo & GitHub */}
+            <ProjectCard
+              title="E-Commerce Platform"
+              description="Description of the E-Commerce Platform"
+              technologies={['Angular', 'Spring Boot', 'MySQL', 'Stripe API', 'Docker']}
+              features={[
+                'Feature 1',
+                'Feature 2',
+                'Feature 3',
+                'Feature 4',
+                'Feature 5'
+              ]}
+              demoLink=""
+              githubLink="https://github.com/Sykios/"
+              status="completed"
+            />
+
+            {/* Example Project with only GitHub */}
+            <ProjectCard
+              title="Cybersecurity Dashboard"
+              description="Very high overview, wow such security"
+              technologies={['React', 'Node.js', 'PostgreSQL', 'Python']}
+              features={[
+                'Really long and complex feature to ensure security is top-notch & the project card is functioning',
+                'Feature 2'
+              ]}
+              githubLink="https://github.com/Sykios/security-dashboard"
+              status="in-progress"
+            />
+
+            {/* Example Project without both */}
+            <ProjectCard
+              title="AI-Powered Code Assistant"
+              description="I think this may be a bit overkill for now"
+              technologies={['Python', 'TensorFlow', 'FastAPI', 'React', 'OpenAI API']}
+              features={[
+                'Feature 1',
+              ]}
+              status="planned"
+            />
+          </div>
+          
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6">
+              Want to see more of my work or collaborate on a project?
+            </p>
+            <a
+              href="#contact"
+              className="inline-block bg-[#548AB7] hover:bg-[#6FA2CD] text-white px-8 py-3 rounded-lg font-medium transition-colors"
+            >
+              Let's Connect
+            </a>
+          </div>
+        </div>
+      </section>
+      
     </div>
   );
 }
