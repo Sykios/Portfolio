@@ -59,15 +59,15 @@ export default function Home() {
                     <div className="relative">
             <div className="pr-0 md:pr-80">
               <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
-                I'm an informatics student at TU Wien with a strong interest in Cybersecurity and AI, driven by curiosity and a hands-on mindset. 
-                Outside the digital world, I'm passionate about nature, intense sports like kickboxing and heavy lifting, and taking on work that challenges both body and mind.
+                I&apos;m an informatics student at TU Wien with a strong interest in Cybersecurity and AI, driven by curiosity and a hands-on mindset. 
+                Outside the digital world, I&apos;m passionate about nature, intense sports like kickboxing and heavy lifting, and taking on work that challenges both body and mind.
               </p>
               <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
                 I thrive in collaborative environments and have developed solid communication and problemsolving skills through honorary work at a large student dorm, where I served as a Heimvertretungsmitglied and IT advisor. 
                 There, I managed everything from EKey fingerprint systems to network infrastructure, printers, and multimedia systems, which combined technical support with strong interpersonal responsibility.
               </p>
               <p className="text-lg text-[#548AB7] dark:text-gray-300 leading-relaxed">
-                Whether it's working on complex software or navigating tough physical challenges, I bring persistence, high frustration tolerance, and a team-first attitude to everything I do.
+                Whether it&apos;s working on complex software or navigating tough physical challenges, I bring persistence, high frustration tolerance, and a team-first attitude to everything I do.
               </p>
             </div>
             
@@ -280,7 +280,7 @@ export default function Home() {
               href="#contact"
               className="inline-block bg-[#548AB7] hover:bg-[#6FA2CD] text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
-              Let's Connect
+              Let&apos;s Connect
             </a>
           </div>
         </div>
@@ -289,9 +289,9 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#EAE8E8] dark:bg-gray-900">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#548AB7] dark:text-white">Let's Work Together</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#548AB7] dark:text-white">Let&apos;s Work Together</h2>
           <p className="text-xl text-[#548AB7] dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. <br />
+            I&apos;m always interested in new opportunities and exciting projects. <br />
             Currently pursuing a junior position in software development or a similar role which pushes my education 
             within the fields of Cybersecurity, AI or DevOps.
           </p>
