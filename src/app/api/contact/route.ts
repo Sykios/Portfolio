@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
 
     // Resend email sending
     // Note: Need to set up API_Key again when hosted
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: [process.env.CONTACT_EMAIL || 'laurenz.m.bilek@gmail.com'],
       subject: `Portfolio Contact: ${subject}`,
