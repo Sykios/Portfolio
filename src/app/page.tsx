@@ -258,6 +258,50 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#EAE8E8] dark:bg-gray-900">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#548AB7] dark:text-white">Let's Work Together</h2>
+          <p className="text-xl text-[#548AB7] dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+            I'm always interested in new opportunities and exciting projects. <br />
+            Currently pursuing a junior position in software development or a similar role which pushes my education 
+            within the fields of Cybersecurity, AI or DevOps.
+          </p>
+          
+          {/* Social Links */}
+          <div className="mt-12 pt-8 border-t border-[#D6D3CD] dark:border-gray-700">
+            <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6">
+              Or connect with me on social media
+            </p>
+            <div className="flex justify-center space-x-6">
+              <a 
+                href="https://www.linkedin.com/in/laurenz-bilek-48445b210/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-[#548AB7] hover:text-[#6FA2CD] transition-colors"
+              >
+                <div className="w-10 h-10 bg-[#548AB7] bg-opacity-20 rounded-lg flex items-center justify-center">
+                  💼
+                </div>
+                <span className="font-medium">LinkedIn</span>
+              </a>
+              
+              <a 
+                href="https://github.com/Sykios" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-[#548AB7] hover:text-[#6FA2CD] transition-colors"
+              >
+                <div className="w-10 h-10 bg-[#548AB7] bg-opacity-20 rounded-lg flex items-center justify-center">
+                  🐙
+                </div>
+                <span className="font-medium">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
