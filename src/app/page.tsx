@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "../../components/navbar";
 import ProjectCard from "../../components/project-card";
 import ContactForm from "../../components/contact-form";
+import Footer from "../../components/footer";
 
 export default function Home() {
   return (
@@ -309,6 +310,7 @@ export default function Home() {
         </div>
       </section>
 
+      <Footer />
     </div>
   );
 }
