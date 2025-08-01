@@ -44,6 +44,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#D6D3CD] dark:bg-gray-800">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#548AB7] dark:text-white">About Me</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6">
+                Short Profile about me
+              </p>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold mb-4 text-[#548AB7] dark:text-white">Quick Facts</h3>
+              <ul className="space-y-2 text-[#548AB7] dark:text-gray-300">
+                <li>🎓 Computer Science Student @ TUWien</li>
+                <li>🌍 Based in Vienna</li>
+                <li>🚀 Always Learning New Technologies</li>
+                <li>💡 Currently pursuing Projects in Cybersecurity, Cloudtech & AI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
