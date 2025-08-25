@@ -61,7 +61,7 @@ export default function Home() {
             <div className="pr-0 md:pr-80">
               <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
                 I&apos;m an informatics student at TU Wien with a strong interest in Cybersecurity and AI, driven by curiosity and a hands-on mindset. 
-                Outside the digital world, I&apos;m passionate about nature, intense sports like kickboxing and heavy lifting, and taking on work that challenges both body and mind.
+                Outside coding, I&apos;m passionate about nature, intense sports like kickboxing and heavy lifting, and taking on work that challenges both body and mind.
               </p>
               <p className="text-lg text-[#548AB7] dark:text-gray-300 mb-6 leading-relaxed">
                 I thrive in collaborative environments and have developed solid communication and problemsolving skills through honorary work at a large student dorm, where I served as a Heimvertretungsmitglied and IT advisor. 
@@ -86,11 +86,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <span className="text-lg mr-3">🚀</span>
-                    <span>Always Learning New Technologies</span>
+                    <span>Positive, social, yet practical-oriented mindset</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-lg mr-3">💡</span>
-                    <span>Currently pursuing Projects in Cybersecurity, Cloudtech & AI</span>
+                    <span>Currently interested in projects dealing with Web Security, Cloud & AI</span>
                   </li>
                 </ul>
               </div>
@@ -108,43 +108,52 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#548AB7] dark:text-white">Selection of my Projects</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Example Project with Demo & GitHub */}
+            {/* SMB ERP System */}
             <ProjectCard
-              title="E-Commerce Platform"
-              description="Description of the E-Commerce Platform"
-              technologies={['Angular', 'Spring Boot', 'MySQL', 'Stripe API', 'Docker']}
+              title="SMB ERP System"
+              description="A modern ERP system for small and medium-sized businesses, developed with Clean Architecture and Domain-Driven Design principles."
+              technologies={['.NET 8', 'Entity Framework Core', 'ASP.NET Core', 'SQLite', 'Razor Pages']}
               features={[
-                'Feature 1',
-                'Feature 2',
-                'Feature 3',
-                'Feature 4',
-                'Feature 5'
+                'Clean Architecture with four clearly separated layers',
+                'Designed for on-premise usage',
+                'Customer and inventory management',
+                'Invoice creation and management',
+                'ASP.NET Core Identity for user authentication',
+                'Automatic audit trail logging'
               ]}
-              demoLink=""
-              githubLink="https://github.com/Sykios/"
-              status="completed"
-            />
-
-            {/* Example Project with only GitHub */}
-            <ProjectCard
-              title="Cybersecurity Dashboard"
-              description="Very high overview, wow such security"
-              technologies={['React', 'Node.js', 'PostgreSQL', 'Python']}
-              features={[
-                'Really long and complex feature to ensure security is top-notch & the project card is functioning',
-                'Feature 2'
-              ]}
-              githubLink="https://github.com/Sykios/security-dashboard"
+              githubLink="https://github.com/Sykios/SMB-ERP"
               status="in-progress"
             />
 
-            {/* Example Project without both */}
+            {/* JobManager - Application Management Desktop App */}
             <ProjectCard
-              title="AI-Powered Code Assistant"
-              description="I think this may be a bit overkill for now"
-              technologies={['Python', 'TensorFlow', 'FastAPI', 'React', 'OpenAI API']}
+              title="JobManager - Application Tracker"
+              description="A digital job application management tool for job seekers to organize applications and maintain oversight of all application processes."
+              technologies={['React', 'TypeScript', 'Electron', 'SQLite', 'Tailwind CSS']}
               features={[
-                'Feature 1',
+                'Cross-Platform Desktop App (Windows, macOS, Linux)',
+                'Application tracking with file upload functionality',
+                'Automated status management and visual timeline',
+                'Deadlines & email reminders through web API - synced via cloud storage',
+                'Contact and company data for statistics',
+                'Search & filter by various criteria'
+              ]}
+              githubLink="https://github.com/Sykios/JobManager"
+              status="in-progress"
+            />
+
+            {/* Plant Care Assistant using AI */}
+            <ProjectCard
+              title="Plant Care Assistant using AI"
+              description="I would like to build a smart plant care assistant where users register their plants and an AI system monitors visual health and environmental conditions to provide personalized care recommendations and reminders. Roughly the planned features include:"
+              technologies={['React Native', 'Python FastAPI', 'Computer Vision', 'SQLite', 'IoT Integration', 'Push Notifications']}
+              features={[
+                'Visual health assessment. Planning to use existing AI models which analyze plant photos for stress, disease, or nutrient deficiency',
+                'Smart watering alerts based on: soil moisture measured with sensors, weather through an API, and plant visual condition',
+                'Personalized care schedules that adapt based on your plant\'s actual response',
+                'Problem diagnosis with photo comparison, like: "Your tomato leaves show nitrogen deficiency" ',
+                'Growth tracking and seasonal care adjustments',
+                'Environmental optimization tips based on light/humidity readings'
               ]}
               status="planned"
             />
