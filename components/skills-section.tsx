@@ -28,9 +28,9 @@ export default function SkillsSection({ className = "" }: SkillsSectionProps) {
       gradientTo: "#9BB894",
       skills: [
         { name: 'Angular', level: 80 },
-        { name: 'React / Next.js', level: 70 },
+        { name: 'React / Next.js', level: 50 },
         { name: 'Type-/JavaScript', level: 80 },
-        { name: 'Tailwind CSS', level: 75 },
+        { name: 'Tailwind CSS', level: 70 },
         { name: 'HTML5 / CSS3', level: 95 }
       ]
     },
@@ -42,8 +42,8 @@ export default function SkillsSection({ className = "" }: SkillsSectionProps) {
       gradientTo: "#FF8A7A",
       skills: [
         { name: 'Java', level: 90 },
-        { name: 'Node.js', level: 70 },
-        { name: 'Python', level: 70 },
+        { name: 'Node.js', level: 60 },
+        { name: 'Python', level: 55 },
         { name: 'PostgreSQL / MySQL', level: 85 },
         { name: 'REST APIs', level: 85 }
       ]
@@ -57,7 +57,7 @@ export default function SkillsSection({ className = "" }: SkillsSectionProps) {
       skills: [
         { name: 'Git / GitHub', level: 90 },
         { name: 'Docker', level: 70 },
-        { name: 'CI/CD', level: 70 },
+        { name: 'OWASP ZAP & Burp Suite', level: 50 },
         { name: 'Figma', level: 80 },
         { name: 'Spring Boot', level: 85 }
       ]
