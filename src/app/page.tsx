@@ -15,19 +15,23 @@ export default function Home() {
       <section id="intro" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pb-8">
         <div className="max-w-5xl mx-auto text-center">
           <div className="mb-6">
-            <div className="w-72 h-90 mx-auto mb-8">
+            <div className="w-80 h-96 sm:w-96 sm:h-[28rem] mx-auto mb-4">
+              
               <Image
-                src="/laurenz-bilek-cover-pic.png" 
+                src="/laurenz-bilek-cover-pic-preload.webp" 
                 alt="Laurenz Bilek - Software Developer"
-                width={4961}
-                height={7061}
+                width={384} // w-96 = 24rem = 384px on larger screens
+                height={448} // Proportional height
                 className="w-full h-full object-contain"
                 priority
+                loading="eager"
+                fetchPriority="high"
+                sizes="(max-width: 640px) 320px, 384px"
               />
             </div>
           </div>
           
-          <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-[#548AB7] to-[#548AB7] bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-6xl font-bold -mt-10 mb-6 bg-gradient-to-r from-[#548AB7] to-[#548AB7] bg-clip-text text-transparent">
             Laurenz Bilek
           </h1>
           
